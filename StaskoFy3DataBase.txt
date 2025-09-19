@@ -1,0 +1,34 @@
+StaskoFyVersion2.0 DataBase:
+Genres:
+id, name, list<songs>(many songs to one genre)
+/---------------------------/
+Albums:
+id, title, length, release date, list<songs>(many songs to one album), list<artistsAlbums>(many artists to many albums), 
+list<producersAlbums>(many producers to many albums)
+/---------------------------/
+Artists:
+id, name, country, debut year, list<artistsSongs>(many artists to many songs), list<artistsAlbums>(many artists to many albums)
+/---------------------------/
+Songs:
+id, title, length, releaseDate, albumid, genreID, list<artistsSongs>(many artists to many songs)
+/---------------------------/
+Producers:
+id, name, country, list<producersAlbums>(many producers to many albums)
+/---------------------------/
+User:
+id, username, email, password favArtist(artistID), favAlbum(albumID), favSong(songID)
+/---------------------------/
+ArtistsSongs:
+id, artistID, songID
+/---------------------------/
+ArtistsAlbums:
+id, artistID, albumID
+/---------------------------/
+ProducersAlbums:
+id, producerID, albumID
+/---------------------------/
+Playlists:
+id, name, length, songCount, userID(many playlists to one user), list<playlistsSongs>(many playlists with many songs)
+
+Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=StaskoFyVersion3;Integrated Security=True;Connect Timeout=30;Encrypt=False;Trust Server Certificate=False;Application Intent=ReadWrite;Multi Subnet Failover=False
+
