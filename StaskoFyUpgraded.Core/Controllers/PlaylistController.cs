@@ -32,35 +32,11 @@ namespace StaskoFyUpgraded.Core.Controllers
                         UserId = int.Parse(text[3]),
                         User = user
                     };
-                    if (text[3] == "NULL")
-                    {
-                        playlist.UserId = int.Parse(null);
-                        playlist.User = null;
-                    }
-                    else
-                    {
-                        playlist.UserId = int.Parse(text[3]);
-                        playlist.User = user;
-                    }
                     context.Playlists.Add(playlist);
                     context.SaveChanges();
                     line = reader.ReadLine();
                 }
             }
-        }
-
-        public void RemoveSongFromPlaylist(int songId)
-        {
-            Song song = context.Songs.FirstOrDefault(x => x.Id == songId);
-            if (song != null)
-            {
-                // work in progress!
-            }
-        }
-
-        public void AddSongToPlaylist(int songId)
-        {
-            // work in progress!
         }
 
         public List<string> ReadPlaylists()
@@ -69,5 +45,4 @@ namespace StaskoFyUpgraded.Core.Controllers
             return songsFromPlaylist;
         }
     }
-
 }

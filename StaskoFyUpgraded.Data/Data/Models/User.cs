@@ -18,7 +18,7 @@ namespace StaskoFyUpgraded.Data.Data.Models
         public string Username { get; set; }
 
         [Required]
-        [StringLength(100, MinimumLength = 6, ErrorMessage = "Password must be at leats 6 characters long!")]
+        [StringLength(100)]
         public string Password { get; set; }
 
         //ne vseki ima lubim artist ne pi6i na maimunica

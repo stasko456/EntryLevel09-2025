@@ -1,0 +1,2 @@
+marin_asenovgrad;marin_asenovgrad;3;2;NULL
+pluto_fan;pluto_fan;5;4;20

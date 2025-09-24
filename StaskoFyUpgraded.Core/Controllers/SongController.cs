@@ -50,6 +50,11 @@ namespace StaskoFyUpgraded.Core.Controllers
             var songs = context.Songs.Select(x => $"id:{x.Id} - Title:{x.Title} - length:{x.Length} - release date:{x.ReleaseDate.Date} - genre:{x.Genre.Name} - genre's id:{x.GenreId}");
             return songs.ToList();
         }
+
+        public List<Song> ReturnSongs()
+        {
+            return context.Songs.ToList();
+        }
     }
 
 }

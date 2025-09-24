@@ -34,6 +34,7 @@ namespace StaskoFyUpgraded.View
             ArtistController artistController = new ArtistController();
             ProducerController producerController = new ProducerController();
             SongController songController = new SongController();
+            UserController userController = new UserController();
             PlaylistController playlistController = new PlaylistController();
             ArtistSongController artistSongController = new ArtistSongController();
             ArtistAlbumController artistAlbumController = new ArtistAlbumController();
@@ -47,11 +48,13 @@ namespace StaskoFyUpgraded.View
                 artistController.AddArtists();
                 producerController.AddProducers();
                 songController.AddSongs();
+                userController.AddUser();
                 playlistController.AddPlaylists();
                 artistSongController.AddArtistsSongs();
                 artistAlbumController.AddArtistsAlbums();
                 producerAlbumController.AddProducersAlbums();
                 playlistSongController.AddPlaylistsSongs();
+                MessageBox.Show("Data loaded to database succesfuly!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
             {
@@ -72,6 +75,28 @@ namespace StaskoFyUpgraded.View
             }
 
             return message;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            UpdateUser updateUser = new UpdateUser();
+            updateUser.Show();
+            this.Hide();
         }
     }
 }
