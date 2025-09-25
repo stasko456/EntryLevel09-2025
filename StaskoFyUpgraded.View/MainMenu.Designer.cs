@@ -42,12 +42,14 @@
             button2 = new Button();
             label3 = new Label();
             label1 = new Label();
+            linkLabel1 = new LinkLabel();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.DarkGray;
+            panel1.Controls.Add(linkLabel1);
             panel1.Controls.Add(button6);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(button5);
@@ -104,6 +106,7 @@
             button5.TabIndex = 16;
             button5.Text = "Read";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // label6
             // 
@@ -128,6 +131,7 @@
             button4.TabIndex = 14;
             button4.Text = "Remove";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click_1;
             // 
             // label5
             // 
@@ -135,11 +139,11 @@
             label5.BackColor = Color.DarkGray;
             label5.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ControlLightLight;
-            label5.Location = new Point(102, 367);
+            label5.Location = new Point(45, 367);
             label5.Name = "label5";
-            label5.Size = new Size(192, 34);
+            label5.Size = new Size(317, 34);
             label5.TabIndex = 13;
-            label5.Text = "Remove User";
+            label5.Text = "Remove your account";
             // 
             // button3
             // 
@@ -160,11 +164,11 @@
             label4.BackColor = Color.DarkGray;
             label4.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ControlLightLight;
-            label4.Location = new Point(865, 134);
+            label4.Location = new Point(803, 134);
             label4.Name = "label4";
-            label4.Size = new Size(178, 34);
+            label4.Size = new Size(303, 34);
             label4.TabIndex = 11;
-            label4.Text = "Update User";
+            label4.Text = "Update your account";
             // 
             // button1
             // 
@@ -227,6 +231,15 @@
             label1.TabIndex = 0;
             label1.Text = "Main Menu";
             // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.ForeColor = Color.White;
+            linkLabel1.Location = new Point(233, 556);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(0, 34);
+            linkLabel1.TabIndex = 19;
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -256,5 +269,6 @@
         private Label label7;
         private Button button5;
         private Label label6;
+        private LinkLabel linkLabel1;
     }
 }

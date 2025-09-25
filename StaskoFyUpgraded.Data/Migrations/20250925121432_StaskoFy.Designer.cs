@@ -12,7 +12,7 @@ using StaskoFyUpgraded.Data.Data;
 namespace StaskoFyUpgraded.Data.Migrations
 {
     [DbContext(typeof(StaskoFyUpgradedContext))]
-    [Migration("20250924122116_StaskoFy")]
+    [Migration("20250925121432_StaskoFy")]
     partial class StaskoFy
     {
         /// <inheritdoc />

@@ -44,12 +44,12 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(198, 23);
+            label3.Location = new Point(134, 23);
             label3.Margin = new Padding(10, 0, 10, 0);
             label3.Name = "label3";
-            label3.Size = new Size(759, 70);
+            label3.Size = new Size(896, 70);
             label3.TabIndex = 12;
-            label3.Text = "Menu for updating a user";
+            label3.Text = "Menu for updating user's data";
             // 
             // listBox2
             // 
@@ -65,12 +65,12 @@
             // 
             button3.BackColor = Color.DarkGray;
             button3.ForeColor = Color.White;
-            button3.Location = new Point(223, 460);
+            button3.Location = new Point(210, 448);
             button3.Margin = new Padding(6);
             button3.Name = "button3";
-            button3.Size = new Size(281, 57);
+            button3.Size = new Size(318, 57);
             button3.TabIndex = 15;
-            button3.Text = "Return to Main";
+            button3.Text = "Return to Main Menu";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
@@ -91,12 +91,12 @@
             // 
             textBox8.BackColor = Color.DarkGray;
             textBox8.ForeColor = Color.White;
-            textBox8.Location = new Point(198, 228);
+            textBox8.Location = new Point(198, 241);
             textBox8.Margin = new Padding(6, 5, 6, 5);
             textBox8.Name = "textBox8";
-            textBox8.Size = new Size(330, 41);
+            textBox8.Size = new Size(343, 41);
             textBox8.TabIndex = 22;
-            textBox8.Text = "Enter user's name:";
+            textBox8.Text = "Enter your new name:";
             textBox8.TextAlign = HorizontalAlignment.Center;
             textBox8.TextChanged += textBox8_TextChanged;
             // 
@@ -104,12 +104,12 @@
             // 
             textBox10.BackColor = Color.DarkGray;
             textBox10.ForeColor = Color.White;
-            textBox10.Location = new Point(627, 205);
+            textBox10.Location = new Point(627, 206);
             textBox10.Margin = new Padding(6, 5, 6, 5);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(330, 41);
             textBox10.TabIndex = 20;
-            textBox10.Text = "Enter user's fav artist id:";
+            textBox10.Text = "Enter your fav artist id:";
             textBox10.TextAlign = HorizontalAlignment.Center;
             textBox10.TextChanged += textBox10_TextChanged;
             // 
@@ -122,7 +122,7 @@
             textBox11.Name = "textBox11";
             textBox11.Size = new Size(330, 41);
             textBox11.TabIndex = 19;
-            textBox11.Text = "Enter user's fav album id:";
+            textBox11.Text = "Enter your fav album id:";
             textBox11.TextAlign = HorizontalAlignment.Center;
             // 
             // textBox12
@@ -134,14 +134,14 @@
             textBox12.Name = "textBox12";
             textBox12.Size = new Size(330, 41);
             textBox12.TabIndex = 18;
-            textBox12.Text = "Enter user's fav song id:";
+            textBox12.Text = "Enter your fav song id:";
             textBox12.TextAlign = HorizontalAlignment.Center;
             // 
             // button4
             // 
             button4.BackColor = Color.DarkGray;
             button4.ForeColor = Color.White;
-            button4.Location = new Point(653, 458);
+            button4.Location = new Point(653, 447);
             button4.Margin = new Padding(6);
             button4.Name = "button4";
             button4.Size = new Size(281, 59);
@@ -154,12 +154,12 @@
             // 
             textBox9.BackColor = Color.DarkGray;
             textBox9.ForeColor = Color.White;
-            textBox9.Location = new Point(198, 300);
+            textBox9.Location = new Point(198, 310);
             textBox9.Margin = new Padding(6, 5, 6, 5);
             textBox9.Name = "textBox9";
-            textBox9.Size = new Size(330, 41);
+            textBox9.Size = new Size(343, 41);
             textBox9.TabIndex = 21;
-            textBox9.Text = "Enter user's password:";
+            textBox9.Text = "Enter your new password:";
             textBox9.TextAlign = HorizontalAlignment.Center;
             textBox9.TextChanged += textBox9_TextChanged;
             // 

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 using StaskoFyUpgraded.Data.Data;
 using StaskoFyUpgraded.Data.Data.Models;
 
@@ -50,11 +51,5 @@ namespace StaskoFyUpgraded.Core.Controllers
             var songs = context.Songs.Select(x => $"id:{x.Id} - Title:{x.Title} - length:{x.Length} - release date:{x.ReleaseDate.Date} - genre:{x.Genre.Name} - genre's id:{x.GenreId}");
             return songs.ToList();
         }
-
-        public List<Song> ReturnSongs()
-        {
-            return context.Songs.ToList();
-        }
     }
-
 }

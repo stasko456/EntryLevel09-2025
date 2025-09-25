@@ -40,12 +40,33 @@ namespace StaskoFyUpgraded.View
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string username = textBox8.Text;
-            string password = textBox9.Text;
-            string favArtistId = textBox10.Text;
-            string favAlbumId = textBox11.Text;
-            string favSongId = textBox12.Text;
-            userController.UpdateUser(username, password, favArtistId, favAlbumId, favSongId);
+            string username = "";
+            string password = "";
+            string favArtistId = "";
+            string favAlbumId = "";
+            string favSongId = "";
+            if (textBox8.Text != "Enter your new name:" !|| !string.IsNullOrEmpty(textBox8.Text))
+            {
+                username = textBox8.Text;
+            }
+            if (textBox9.Text != "Enter your new password:" !|| string.IsNullOrEmpty(textBox9.Text))
+            {
+                password = textBox8.Text;
+            }
+            if (textBox10.Text != "Enter your fav artist id:" !|| string.IsNullOrEmpty(textBox10.Text))
+            {
+                favArtistId = textBox10.Text;
+            }
+            if (textBox11.Text != "Enter your fav album id:" !|| string.IsNullOrEmpty(textBox11.Text))
+            {
+                favAlbumId = textBox11.Text;
+            }
+            if (textBox12.Text != "Enter your fav song id:" !|| string.IsNullOrEmpty(textBox12.Text))
+            {
+                favSongId = textBox12.Text;
+            }
+            userController.UpdateCurrentUser(username, password, favArtistId, favAlbumId, favSongId);
+            MessageBox.Show("Successfuly updated your account!", "Success!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void textBox8_TextChanged(object sender, EventArgs e)

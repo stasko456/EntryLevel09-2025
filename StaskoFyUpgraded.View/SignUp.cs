@@ -53,6 +53,7 @@ namespace StaskoFyUpgraded.View
                         MainMenu main = new MainMenu();
                         main.Show();
                         this.Hide();
+                        Session.User = user;
                     }
                     else
                     {

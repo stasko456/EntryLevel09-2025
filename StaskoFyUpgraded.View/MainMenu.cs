@@ -16,6 +16,7 @@ namespace StaskoFyUpgraded.View
     public partial class MainMenu : Form
     {
         private StaskoFyUpgradedContext context = new StaskoFyUpgradedContext();
+        private UserController userController = new UserController();
 
         public MainMenu()
         {
@@ -89,13 +90,39 @@ namespace StaskoFyUpgraded.View
 
         private void button6_Click_1(object sender, EventArgs e)
         {
-
+            ViewPlaylists viewPlaylists = new ViewPlaylists();
+            viewPlaylists.Show();
+            this.Hide();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             UpdateUser updateUser = new UpdateUser();
             updateUser.Show();
+            this.Hide();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Are you shure that you want to delete your account?", "Question?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (result == DialogResult.Yes)
+            {
+                userController.RemoveCurrentUser();
+                MessageBox.Show("Your account HAS BEEN DELETED!", "Information?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LogIn logIn = new LogIn();
+                logIn.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Your account IS NOT DELETED!", "Information?", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            SelectQueries selectQueries = new SelectQueries();
+            selectQueries.Show();
             this.Hide();
         }
     }
